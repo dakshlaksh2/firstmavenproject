@@ -1,5 +1,9 @@
 
+import java.sql.Time;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Scanner;
+import java.util.TimeZone;
 
 public class Main {
 
@@ -94,6 +98,18 @@ public class Main {
         System.out.println(sum);
         int sum1 = (x5++)+y8;
         System.out.println(sum1);
+        int intRandom =(int)(Math.random()*100);
+        System.out.println(intRandom);
+        Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("Europe/Paris"));
+        Date date;
+
+        Scanner input =new Scanner (System.in);
+        System.out.println("enter a number");
+        if(input==null)
+        System.out.println("not null");
+        input.close();
+
+
 
     }
     }
